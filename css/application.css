@@ -373,16 +373,24 @@ template {
   font-family: 'Lato', sans-serif; }
 
 .content {
-  position: absolute;
+  position: fixed;
   bottom: 50px;
   left: 50px;
   color: #f1f1f1;
-  width: 100%;
-  padding: 10px; }
+  width: 100%; }
   .content h1 {
-    font-size: 3em; }
+    font-size: 6em; }
   .content p {
-    font-size: 1.7em; }
+    font-size: 4em; }
+  @media (min-width: 1024px) {
+    .content {
+      bottom: 50px;
+      left: 50px;
+      padding: 10px; }
+      .content h1 {
+        font-size: 3em; }
+      .content p {
+        font-size: 1.7em; } }
 
 .homepage-hero-module {
   border-right: none;

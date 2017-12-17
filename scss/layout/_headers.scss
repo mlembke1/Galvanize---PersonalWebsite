@@ -1,15 +1,25 @@
 .content {
-    position: absolute;
-    bottom: 50px;
-    left: 50px;
-    color: #f1f1f1;
-    width: 100%;
-    padding: 10px;
-    h1{
-      font-size: 3em;
+      position: fixed;
+      bottom: 50px;
+      left: 50px;
+      color: #f1f1f1;
+      width: 100%;
+      // padding: 10px;
+      h1{
+        font-size: 6em;
+      }
+      p {
+        font-size: 4em;
+      }
+    @media(min-width: $desktop-breakpoint){
+        bottom: 50px;
+        left: 50px;
+        padding: 10px;
+        h1{
+          font-size: 3em;
+        }
+        p{
+          font-size: 1.7em;
+        }
     }
-    p{
-      font-size: 1.7em;
-    }
-
 }
