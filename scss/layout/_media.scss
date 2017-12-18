@@ -48,3 +48,26 @@
     min-width: 100%;
     min-height: 100%;
 }
+
+
+//     BUTTONS    //
+
+#big-family-button {
+  margin-left: 68px;
+  @media(min-width: $tablet-breakpoint){
+    margin-left: 15px;
+  }
+  @media(min-width: $desktop-breakpoint){
+    margin-left: 135px;
+  }
+}
+
+#little-family-button {
+  margin-left: 68px;
+  @media(min-width: $tablet-breakpoint){
+    margin-left: 15px;
+  }
+  @media(min-width: $desktop-breakpoint){
+    margin-left: 135px;
+  }
+}

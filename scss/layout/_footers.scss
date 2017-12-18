@@ -27,7 +27,7 @@ footer.aboutme {
           transition: all .5s;
       }
           a.facebook {
-            background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/F_icon.svg/2000px-F_icon.svg.png);
+            background-image: url(https://media.giphy.com/media/ijEiXYEo9DBxm/giphy.gif);
             border-radius: 100%;
           }
         a.linkedin {
@@ -40,6 +40,6 @@ footer.aboutme {
           opacity: 1;
         }
         @media(min-width: $tablet-breakpoint){
-              font-size: 1.3em;              
+              font-size: 1.3em;
         }
 }
