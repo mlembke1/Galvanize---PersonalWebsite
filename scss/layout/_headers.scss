@@ -1,25 +1,59 @@
-.content {
-      position: fixed;
-      bottom: 50px;
-      left: 50px;
+.homepage-content {
       color: #f1f1f1;
       width: 100%;
-      // padding: 10px;
       h1{
         font-size: 6em;
-      }
-      p {
-        font-size: 4em;
+        position: fixed;
+        left: 140px;
+        bottom: 600px;
       }
     @media(min-width: $desktop-breakpoint){
-        bottom: 50px;
-        left: 50px;
         padding: 10px;
         h1{
-          font-size: 3em;
-        }
-        p{
-          font-size: 1.7em;
+          font-size: 4em;
+          bottom: 300px;
+          left: 430px;
+          font-weight: 100;
         }
     }
+}
+
+header.aboutme {
+  text-align: center;
+  background-image: url(../media/images/backgroundphoto2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  padding-top: 60px;
+  line-height: 1.5;
+      .profile-image {
+        margin-top: 135px;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border: 10px solid rgb(202,226,208);
+        transition: all .5s;
+     }
+      .profile-image:hover {
+        transform: scale(1.2) rotate(5deg);
+      }
+      .tag {
+        background-color: #eeebde;
+        opacity: 0.95;
+        padding: 10px;
+        display: table;
+        margin: 10px auto;
+        list-style: none;
+        text-align: center;
+        width: 100%;
+        position: relative;
+        bottom: -10px;
+            @media(min-width: $tablet-breakpoint){
+              bottom: -17px;
+            }
+        }
+      @media(min-width: $tablet-breakpoint){
+        min-height: 470px;
+
+      }
 }

@@ -1,0 +1,51 @@
+.card {
+    padding: 20px 40px 40px;
+    max-width: 500px;
+    text-align: left;
+    background: rgb(238,235,222);
+    border-bottom: 4px solid #ccc;
+    border-radius: 6px;
+    transition: all .5s;
+    color: rgb(0,0,0);
+    font-size: 1.3em;
+    :hover {
+      border-color: rgb(244,182,154);
+    }
+  }
+
+  .aboutme ul.skills {
+  padding: 0;
+  text-align: center;
+      li {
+      border-radius: 6px;
+      display: inline-block;
+      background: rgb(202,226,208);
+      color: black;
+      padding: 5px 10px;
+      margin: 2px;
+          :nth-child(odd) {
+            background: rgb(243,212,205);
+          }
+    }
+}
+
+
+  .flex {
+      @media(min-width: $tablet-breakpoint){
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: distribute;
+      justify-content: space-around;
+      margin: 0 auto;
+  }
+}
+
+main.aboutme {
+  background-color: rgb(189,204,193);
+  @media(min-width: $tablet-breakpoint){
+     padding-top: 20px;
+     p {
+       line-height: 1.6em;
+     }
+  }
+}
