@@ -399,12 +399,15 @@ header.aboutme {
   padding-top: 60px;
   line-height: 1.5; }
   header.aboutme .profile-image {
-    margin-top: 135px;
+    margin-top: 51px;
     width: 150px;
     height: 150px;
     border-radius: 50%;
     border: 10px solid #cae2d0;
     transition: all .5s; }
+    @media (min-width: 768px) {
+      header.aboutme .profile-image {
+        margin-top: 100px; } }
   header.aboutme .profile-image:hover {
     transform: scale(1.2) rotate(5deg); }
   header.aboutme .tag {
@@ -420,9 +423,45 @@ header.aboutme {
     bottom: -10px; }
     @media (min-width: 768px) {
       header.aboutme .tag {
-        bottom: -17px; } }
+        bottom: -52px; } }
   @media (min-width: 768px) {
     header.aboutme {
+      min-height: 470px; } }
+
+header.aspirations {
+  text-align: center;
+  background-image: url(../media/images/backgroundphoto3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  padding-top: 60px;
+  line-height: 1.5; }
+  header.aspirations .profile-image {
+    margin-top: 135px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 10px solid #cae2d0;
+    transition: all .5s; }
+  header.aspirations .profile-image:hover {
+    transform: scale(1.2) rotate(5deg); }
+  header.aspirations .tag {
+    background-color: #eeebde;
+    opacity: 0.95;
+    padding: 10px;
+    display: none;
+    margin: 10px auto;
+    list-style: none;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    bottom: -10px; }
+    @media (min-width: 768px) {
+      header.aspirations .tag {
+        bottom: -309px;
+        display: table; } }
+  @media (min-width: 768px) {
+    header.aspirations {
       min-height: 470px; } }
 
 footer.aboutme {
@@ -568,9 +607,12 @@ footer.aboutme {
         max-width: 1200px;
         padding: 0 30px; } }
   .aboutme-main-nav .nav .name {
-    display: block;
+    display: none;
     margin-right: auto;
     color: grey; }
+    @media (min-width: 768px) {
+      .aboutme-main-nav .nav .name {
+        display: block; } }
 
 .card {
   padding: 20px 40px 40px;
@@ -588,6 +630,8 @@ footer.aboutme {
 .aboutme ul.skills {
   padding: 0;
   text-align: center; }
+  .aboutme ul.skills :nth-child(odd) {
+    background: #f3d4cd; }
   .aboutme ul.skills li {
     border-radius: 6px;
     display: inline-block;
@@ -595,8 +639,6 @@ footer.aboutme {
     color: black;
     padding: 5px 10px;
     margin: 2px; }
-    .aboutme ul.skills li :nth-child(odd) {
-      background: #f3d4cd; }
 
 @media (min-width: 768px) {
   .flex {

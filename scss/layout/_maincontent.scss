@@ -16,6 +16,9 @@
   .aboutme ul.skills {
   padding: 0;
   text-align: center;
+      :nth-child(odd) {
+        background: rgb(243,212,205);
+      }
       li {
       border-radius: 6px;
       display: inline-block;
@@ -23,9 +26,6 @@
       color: black;
       padding: 5px 10px;
       margin: 2px;
-          :nth-child(odd) {
-            background: rgb(243,212,205);
-          }
     }
 }
 
